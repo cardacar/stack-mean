@@ -8,11 +8,10 @@ productCtrl.getProducts = async (req, res)=>{
     const productFind = await product.find();
     res.json(productFind)
 } 
-productCtrl.createProduct = (req, res)=>{
-    
+productCtrl.createProduct = async(req, res)=>{
     const newProduct = new product(req.body);
-    console.log(newProduct);
-    res.json('create product')
+    await newProduct.save()
+    res.send({message:'producto creado'})
 }
 
 productCtrl.getProduct=(req, res)=>{

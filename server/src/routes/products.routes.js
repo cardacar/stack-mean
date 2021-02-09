@@ -14,10 +14,10 @@ router.get('/products', getProducts);
 //creo un nuevo producto
 router.post('/products', createProduct);
 
-router.get('/products:id',getProduct);
+router.get('/products/:id',getProduct);
 
-router.put('/products:id', editProduct);
+router.put('/products/:id', editProduct);
 
-router.delete('/products:id', deleteProduct);
+router.delete('/products/:id', deleteProduct);
 
 module.exports = router;
