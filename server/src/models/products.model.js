@@ -1,6 +1,7 @@
 const {Schema, model} = require('mongoose')
 
 const productSchema =  new Schema({
+    codigo:{type: String, require:true, trim: true},
     nombre: {type: String, require:true, trim: true},
     cantidad : {type: Number, default: 0, trim: true},
     precio : {type: Number, default: 0, trim: true},
