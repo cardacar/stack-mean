@@ -9,7 +9,10 @@ productCtrl.getProducts = async (req, res)=>{
     res.json(productFind)
 } 
 productCtrl.createProduct = (req, res)=>{
-    res.send('creando los productos')
+    
+    const newProduct = new product(req.body);
+    console.log(newProduct);
+    res.json('create product')
 }
 
 productCtrl.getProduct=(req, res)=>{
