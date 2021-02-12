@@ -6,5 +6,28 @@ POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-    "hola": "hola"
+    
+    "precio": 555000
+
+
+}
+
+
+###
+GET  http://localhost:3000/products/456
+
+###
+DELETE http://localhost:3000/products/456
+
+###
+PUT http://localhost:3000/products/456
+Content-Type: application/json
+
+{
+    "nombre": "pantaloneta",
+    "cantidad": 10,
+    "precio": 10000,
+    "color": "verde",
+    "categoria": "pantalon",
+    "talla": "s"
 }
