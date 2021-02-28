@@ -5,5 +5,11 @@ import { Injectable } from '@angular/core';
 })
 export class ProductsService {
 
-  constructor() { }
+  URL_API = 'http://localhost:3000/products'
+
+  constructor() {  }
+
+  getProducts(){
+    return[]
+  }
 }
